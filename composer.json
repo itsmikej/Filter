@@ -1,0 +1,24 @@
+{
+  "name": "imj/filter",
+  "type": "library",
+  "description": "A library provides tools to filter variable",
+  "keywords": ["filter"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "itsmikej",
+      "email": "jiangyang33@gmail.com",
+      "homepage": "http://mikej.me",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.3.0"
+  },
+  "autoload": {
+    "psr-4": {"Imj\\": "src/"}
+  }
+}
