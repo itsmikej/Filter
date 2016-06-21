@@ -5,7 +5,7 @@ A library provides tools to filter variable
 Installation
 ------------
 ```shell
-composer require Imj\Filter
+composer require imj\filter
 ```
 
 Basic Usage
