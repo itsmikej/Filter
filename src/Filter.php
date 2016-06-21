@@ -26,6 +26,8 @@ class Filter
             }
             return null;
         }
+        $var_type = isset($var_type) ? $var_type : self::STRING_TYPE;
+
         switch ($var_type) {
             case self::STRING_TYPE:
                 self::string($value, $options);
