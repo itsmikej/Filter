@@ -13,7 +13,7 @@ Basic Usage
 
 filter string
 ```php
-uae Imj\Filter
+use Imj\Filter
 
 $str = ' str';
 echo Filter::string($str); // str
@@ -27,7 +27,7 @@ echo Filter::string($str, ['regex'=>"/\d+/"]); // null
 
 filter int/uint/float/ufloat
 ```php
-uae Imj\Filter
+use Imj\Filter
 
 $int = '10';
 echo Filter::int($int, ['max'=>11, 'min'=>8]); // 10
@@ -49,7 +49,7 @@ echo Filter::uint($int, ['default'=>100]);
 
 filter by enum
 ```php
-uae Imj\Filter
+use Imj\Filter
 
 $v = 'foo';
 echo Filter::enum($v, ['enum'=>['foo', 'bar']]); // foo
@@ -63,7 +63,7 @@ echo Filter::enum($v, ['enum'=>['foo', 'bar'], 'default'=>'fbb']); //fbb
 
 filter by enums key
 ```php
-uae Imj\Filter
+use Imj\Filter
 
 $enum = [
   'a' => 'foo',
@@ -89,7 +89,7 @@ echo Filter::enumByKey($v, ['enum'=>$enum, 'default_key'=>'b', 'enum_key' => tru
 
 filter json
 ```php
-uae Imj\Filter
+use Imj\Filter
 
 $arr = ['foo'=>1];
 $v = json_encode($arr);
@@ -102,7 +102,7 @@ var_dump(Filter::json($v, ['json_assoc'=>true, 'json_schema'=>['foo' => [Filter:
 
 In addition, you can also use `validate` method and the effect is the same.
 ```php
-uae Imj\Filter
+use Imj\Filter
 
 $str = 'abcdefg';
 echo Filter::validate($str, Filter::STRING_TYPE, ['length'=>2]); // ab
